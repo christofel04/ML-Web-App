@@ -11,7 +11,7 @@ This is **Dockerized- ML - Based Web App** Created by Christofel Goenawan where 
 To create this Web- App User used [Piotr Plonski's Paper](https://www.deploymachinelearning.com/#fig:2) as references.
 
 The Web App is build using **Python , Django , and Flask Programming Languages**.
-The Machine Learning Models contained here can are:
+The Machine Learning Models contained here are:
 
 - Random Forest Classifier
 - XGBoost Classifier
