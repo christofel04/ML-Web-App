@@ -78,7 +78,8 @@ class PredictView(views.APIView):
         algorithm_version = self.request.query_params.get("version")
 
         algs = MLAlgorithm.objects.filter(parent_endpoint__name = endpoint_name, status__status = algorithm_status, status__active=True)
-
+        
+        print(algs)
         if algorithm_version is not None:
             algs = algs.filter(version = algorithm_version)
 
@@ -94,8 +95,11 @@ class PredictView(views.APIView):
             )
         alg_index = 0
         if algorithm_status == "ab_testing":
-            alg_index = 0 if rand() < 0.5 else 1
-
+            alg_index = 1 if rand() < 0.5 else 2
+        
+        #print(alg_index)
+        #alg_index = 0
+        
         algorithm_object = registry.endpoints[algs[alg_index].id]
         prediction = algorithm_object.compute_prediction(request.data)
 
