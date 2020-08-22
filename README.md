@@ -7,6 +7,7 @@ This is **Dockerized- ML - Based Web App** Created by Christofel Goenawan where 
 3. **Contain Vary Machine Learning Models and Its Versions**
 4. **A/B Testing Features for Models Development**
 5. **Containerized Application in Docker**
+6. **Simple Automatic Testing for Machine Learning Model and Pages**
 
 To create this Web- App User used [Piotr Plonski's Paper](https://www.deploymachinelearning.com/#fig:2) as references.
 
